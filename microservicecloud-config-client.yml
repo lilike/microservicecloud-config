@@ -8,7 +8,7 @@ server:
     port: 8201
 
 spring:
-    profiles:dev
+    profiles: dev
     application:
         name: microservicecloud-config-client
     
@@ -21,7 +21,7 @@ server:
     port: 8202
 
 spring:
-    profiles:test
+    profiles: test
     application:
         name: microservicecloud-config-client
     
