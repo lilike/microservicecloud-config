@@ -1,0 +1,19 @@
+spring:
+    profiles:
+        active:
+        - dev
+            
+---
+spring:
+    profiles: dev 
+    application:
+        name: microservicecloud-config-lilike-dev
+
+# 开发环境
+---
+spring:
+    profiles: test # 测试环境
+    application:
+        name: microservicecloud-config-lilike-test
+
+# 请保存为utf-8的格式
