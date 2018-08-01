@@ -56,8 +56,8 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
 spring:
+    application:
     profiles: test
-   application:
     name: microservicecloud-acount # 微服务的名字
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
