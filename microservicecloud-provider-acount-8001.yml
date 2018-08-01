@@ -14,8 +14,8 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
 spring:
+   profiles: dev
    application:
-    profiles: dev
     name: microservicecloud-acount # 微服务的名字
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
@@ -53,10 +53,11 @@ mybatis:
   type-aliases-package: com.lilike.springcloud.entity    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
-    
+   
+ 
 spring:
+   profiles: test
    application:
-    profiles: test
     name: microservicecloud-acount # 微服务的名字
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
