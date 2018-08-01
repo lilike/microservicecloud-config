@@ -4,7 +4,6 @@ spring:
         - dev
             
 ---
-
 server:
   port: 8001
 
@@ -56,7 +55,7 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
 spring:
-    application:
+   application:
     profiles: test
     name: microservicecloud-acount # 微服务的名字
    datasource:
